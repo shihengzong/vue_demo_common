@@ -1,12 +1,26 @@
-/*
- * @Description: please edit
- * @Command: please edit
- * @Author: zongsh
- * @Date: 2019-09-04 17:18:27
- * @LastEditTime: 2019-09-05 15:36:33
- * @LastEditors: zongsh
- */
 export default {
-  path: '/mine',
-  component: () => import('@/views/mine') // @符号表示src目录
+    path : '/mine',
+    component : () => import('@/views/Mine'),
+    children : [
+        {
+            path : 'center',
+            component : () => import('@/views/Mine/center.vue')
+        },
+        {
+            path : 'login',
+            component : () => import('@/components/Login')
+        },
+        {
+            path : 'register',
+            component : () => import('@/components/Register')
+        },
+        {
+            path : 'findPassword',
+            component : () => import('@/components/FindPassword')
+        },
+        {
+            path : '/mine',
+            redirect : 'center'
+        }
+    ]
 }

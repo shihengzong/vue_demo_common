@@ -1,33 +1,28 @@
-<!--
- * @Description: please edit
- * @Command: please edit
- * @Author: zongsh
- * @Date: 2019-09-04 17:56:46
- * @LastEditTime: 2019-09-09 16:41:12
- * @LastEditors: Please set LastEditors
- -->
 <template>
-  <div id="main">
-    <Header title="喵喵mine" />
-    <Login />
-    <Footer />
-  </div>
+    <div id="main">
+        <Header title="我的喵喵" />
+        <div id="content">
+            <router-view />
+        </div>
+        <TabBar />
+    </div>
 </template>
 
 <script>
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Login from "@/components/login";
+import Header from '@/components/Header';
+import TabBar from '@/components/TabBar';
+import Login from '@/components/Login';
+
 export default {
-  name: "mine",
-  components: {
-    Header,
-    Footer,
-    Login
-  }
-};
+    name : 'Mine',
+    components : {
+        Header,
+        TabBar,
+        Login
+    }
+}
 </script>
 
-<style  scoped>
-/* 样式 */
-</style>>
+<style>
+
+</style>

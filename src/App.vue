@@ -1,6 +1,7 @@
 <template>
-  <!-- keep-alive缓存 -->
-  <keep-alive>
-    <router-view />
-  </keep-alive>
+    <keep-alive>
+        <router-view/>
+    </keep-alive>
 </template>
+
+

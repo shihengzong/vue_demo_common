@@ -1,3 +1,10 @@
+<!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-09-09 11:29:18
+ * @LastEditTime: 2019-09-09 11:29:18
+ * @LastEditors: your name
+ -->
 # vue_demo_common
 
 ## Project setup
@@ -26,7 +33,7 @@ npm run lint
 ```
 <!--  1.初始化vue项目
       2.vue create xxx
-      3自定义选项:
+      3.自定义选项:
         Babel
         Router
         Vuex
